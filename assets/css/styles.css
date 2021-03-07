@@ -26,10 +26,12 @@ body{
   flex-wrap: wrap;
 }
 
-.header-logo{
+.header-logo-link{
   font-family: 'Patrick Hand', cursive;
   font-size: 2em;
   text-transform: capitalize;
+  color: var(--light-bg-color);
+  text-decoration: none;
 }
 
 .header-nav-menu{
@@ -37,21 +39,16 @@ body{
   align-items: center;
 }
 
-.header-list-item{
+.header-list-item + .header-list-item{
+  margin-left: 50px;
+}
+
+.list-item-link{
   text-transform: uppercase;
   font-weight: bold;
   color: var(--light-bg-color);
   text-decoration: none;
 }
-
-li > .header-list-item{
-  margin-left: 50px;
-}
-
-li:nth-child(1) .header-list-item{
-  margin-left: 0;
-}
-
 
 .header-contact-btn{
   color: inherit;
