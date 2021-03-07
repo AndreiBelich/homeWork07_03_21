@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --dark-bg-color: #262626;
+  --light-bg-color: rgb(255,255,255);
+}
+
+body{
+  font-family: Arial, sans-serif;
+  color: var(--light-bg-color);
+}
+
+.wrapper{
+  background-color: var(--dark-bg-color) ;
+  padding: 30px 0;
+}
+
+.header-content{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-logo{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.header-nav-menu{
+  display: flex;
+  align-items: center;
+}
+
+.header-list-item{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--light-bg-color);
+  text-decoration: none;
+}
+
+li > .header-list-item{
+  margin-left: 50px;
+}
+
+li:nth-child(1) .header-list-item{
+  margin-left: 0;
+}
+
+
+.header-contact-btn{
+  color: inherit;
+  background-color: var(--dark-bg-color);
+  border: 3px solid var(--light-bg-color);
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 0.75em;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+
+.header-contact-btn:hover{
+  color: var(--dark-bg-color);
+  background-color: var(--light-bg-color);
+}
